@@ -1,4 +1,4 @@
-# Revivify--Depression-detection-and-control-system
+# Revivify 
 
 <p align="center">
   <img src="https://github.com/samiksha-patil/Revivify--Depression-detection-and-control-system/blob/main/Revivfy_logo.svg" height="100">
