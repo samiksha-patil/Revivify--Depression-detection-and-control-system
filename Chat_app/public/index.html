@@ -21,7 +21,11 @@
 
                <input class="input-box mt-4" type="text" name="username" placeholder="Display name" required>
 
-               <input class="input-box mt-4" type="text" name="room" placeholder="Room" required>
+               <input list="room" class="input-box mt-4" type="text" name="room" placeholder="Room" required autocomplete="off">
+               <datalist id="room">
+                <option value="Share Thoughts">
+                <option value="Talk with strangers"> 
+            </datalist>
                <button class="btn-yellow mt-4 ">Join</button>
            </form>
       
