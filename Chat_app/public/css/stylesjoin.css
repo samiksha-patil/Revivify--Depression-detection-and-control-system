@@ -1,0 +1,110 @@
+.container-bg{
+    background-color: #fffcde;
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    height:350px;
+    width: 300px;
+    border:none;
+    border-radius: 54px;
+    padding: 50px 50px 20px 50px;
+}
+.head-title{
+    text-align: center;
+    font-size: x-large;              
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-box{
+    background-color: #ecf1f8;
+    border-radius: 10px;
+    height: 40px;
+    border: none;  
+    padding: 15px;            
+}
+.input-box:focus{
+    outline: 0;           
+}
+.btn-yellow{
+    background-color: #413243;
+    color:#ecf1f8;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin:auto;
+    z-index: 8;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.btn-yellow:focus,.btn-yellow:hover{
+    outline:0;
+    background-color: #2b212c;
+    color: #ffffff;
+}
+.nav-l{
+    height:10vh;
+    padding: 15px;
+   
+    justify-content: center;
+}
+.tab {
+float: left;
+width: 20%;
+padding-right: 70px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+display: block;
+background-color: inherit;
+color:#413243;
+padding: 22px 16px;
+width: 100%;
+border: none;
+outline: none;
+text-align: left;
+cursor: pointer;
+transition: 0.3s;
+font-size: 17px;
+margin-top: 15px;
+}
+
+
+.shape{
+position: absolute;
+bottom:0px;
+overflow: hidden;
+
+}
+@media only screen and (max-width: 600px) {
+  
+.shape{
+    position: absolute;
+    bottom:0px;
+    overflow: hidden;
+    
+    }  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
