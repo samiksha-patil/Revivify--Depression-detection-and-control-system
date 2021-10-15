@@ -17,11 +17,11 @@
                 <div class="container">
                     <form action="" method="POST" autocomplete="off">
                         {% csrf_token %}
-                        {{form.uname|as_crispy_field}}
-                        {{form.lname|as_crispy_field}}
-                        {{form.fname|as_crispy_field}}
-                        {{form.age|as_crispy_field}}
-                        {{form.gender|as_crispy_field}}
+                        {{form.uname|crispy}}
+                        {{form.lname|crispy}}
+                        {{form.fname|crispy}}
+                        {{form.age|crispy}}
+                        {{form.gender|crispy}}
                         {{form.user}}
                        
                         <button type="submit" class="btn btn-success mb-4 mt-4">Sign up</button>
