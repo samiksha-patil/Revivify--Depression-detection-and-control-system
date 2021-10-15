@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Child</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/css/home.css">
+    <link rel="stylesheet" type="text/css" href="..\..\static\css\add-child-form.css">
+</head>
+
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">PHQ 9</h4>
+							
+                                <form method="POST" class="my-login-validation" action="/phq">{% csrf_token %}
+								
+
+                             
+
+
+                                <div class="form-group">
+                                    <label for="question1">Little interest or pleasure in doing things</label>
+                                    <div id="question1" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                                            <label class="form-check-label" for="question1">
+                                                Not at all
+                                            </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                                                <label class="form-check-label" for="question1">
+                                                    Several days
+                                                </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question1">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="3" name="question1" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question1">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+								</div>
+
+                                
+                                <div class="form-group">
+                                    <label for="question2">. Feeling down, depressed, or hopeless</label>
+                                    <div id="question2" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="0" name="question2" id=" Not_at_all">
+                                            <label class="form-check-label" for="question2">
+                                                Not at all
+                                            </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="1" name="question2" id="Several_days">
+                                                <label class="form-check-label" for="question2">
+                                                    Several days
+                                                </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="2" name="question2" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question2">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="3" name="question2" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question2">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+								</div>
+
+                                
+                                <div class="form-group">
+                                    <label for="question3">Trouble falling or staying asleep, or sleeping too much</label>
+                                    <div id="question3" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="0" name="question3" id=" Not_at_all">
+                                            <label class="form-check-label" for="question3">
+                                                Not at all
+                                            </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="1" name="question3" id="Several_days">
+                                                <label class="form-check-label" for="question3">
+                                                    Several days
+                                                </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="2" name="question3" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question3">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="3" name="question3" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question3">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+								</div>
+
+                                
+                                <div class="form-group">
+                                    <label for="question4">Feeling tired or having little energy</label>
+                                    <div id="question4" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="0" name="question4" id=" Not_at_all">
+                                            <label class="form-check-label" for="question4">
+                                                Not at all
+                                            </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="1" name="question4" id="Several_days">
+                                                <label class="form-check-label" for="question4">
+                                                    Several days
+                                                </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="2" name="question4" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question4">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="3" name="question4" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question4">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+								</div>
+                                <div class="form-group">
+                                    <label for="question4">Little interest or pleasure in doing things</label>
+                                    <div id="question4" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="1" name="question4" id=" Not_at_all">
+                                            <label class="form-check-label" for="question4">
+                                                Not at all
+                                            </label>
+                                            </div>
+                                
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="2" name="question4" id="Several_days">
+                                                <label class="form-check-label" for="question4">
+                                                    Several days
+                                                </label>
+                                                </div>
+                                
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3" name="question4" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question4">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+                                
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="4" name="question4" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question4">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="question5">Poor appetite or overeating?</label>
+                                    <div id="question5" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="1" name="question5" id=" Not_at_all">
+                                            <label class="form-check-label" for="question5">
+                                                Not at all
+                                            </label>
+                                            </div>
+                                
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="2" name="question5" id="Several_days">
+                                                <label class="form-check-label" for="question5">
+                                                    Several days
+                                                </label>
+                                                </div>
+                                
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3" name="question5" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question5">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+                                
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="4" name="question5" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question5">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="question6">Feeling bad about yourself - or that you are a failure or have let yourself or your family down?</label>
+                                    <div id="question6" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="1" name="question6" id=" Not_at_all">
+                                            <label class="form-check-label" for="question6">
+                                                Not at all
+                                            </label>
+                                            </div>
+                                
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="2" name="question6" id="Several_days">
+                                                <label class="form-check-label" for="question6">
+                                                    Several days
+                                                </label>
+                                                </div>
+                                
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3" name="question6" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question6">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+                                
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="4" name="question6" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question6">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="question7">Trouble concentrating on things, such as reading the newspaper or watching television?</label>
+                                    <div id="question7" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="1" name="question7" id=" Not_at_all">
+                                            <label class="form-check-label" for="question7">
+                                                Not at all
+                                            </label>
+                                            </div>
+                                
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="2" name="question7" id="Several_days">
+                                                <label class="form-check-label" for="question7">
+                                                    Several days
+                                                </label>
+                                                </div>
+                                
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3" name="question7" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question7">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+                                
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="4" name="question7" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question7">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="question8">Moving or speaking so slowly that other people could have noticed?
+                                        Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?</label>
+                                    <div id="question8" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="1" name="question8" id=" Not_at_all">
+                                            <label class="form-check-label" for="question8">
+                                                Not at all
+                                            </label>
+                                            </div>
+                                
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="2" name="question8" id="Several_days">
+                                                <label class="form-check-label" for="question8">
+                                                    Several days
+                                                </label>
+                                                </div>
+                                
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3" name="question8" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question8">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+                                
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="4" name="question8" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question8">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                div class="form-group">
+                                    <label for="question9">Thoughts that you would be better off dead, or of hurting yourself in some way?</label>
+                                    <div id="question9" class="form-group d-flex flex-row justify-content-around">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="1" name="question9" id=" Not_at_all">
+                                            <label class="form-check-label" for="question9">
+                                                Not at all
+                                            </label>
+                                            </div>
+                                
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value="2" name="question9" id="Several_days">
+                                                <label class="form-check-label" for="question9">
+                                                    Several days
+                                                </label>
+                                                </div>
+                                
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" value="3" name="question9" id="More_than_half_the_days">
+                                                    <label class="form-check-label" for="question9">
+                                                        More than half the days
+                                                    </label>
+                                                    </div>
+                                
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="4" name="question9" id=" Nearly_every_day">
+                                            <label class="form-check-label" for="question9">
+                                                Nearly every day
+                                            </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                                      
+
+
+
+                             
+
+
+
+
+                           
+                               
+
+
+                               
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Submit
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="..\..\static\js\add-child-form.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'bn,en,gu,hi,kn,ml,mr,ne,or,pa,sd,si,ta,te,ur',}, 'google_translate_element');
+        }
+    </script>
+</body>
+</html>
