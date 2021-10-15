@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'homepage.apps.HomepageConfig',
     'signup.apps.SignupConfig',
-    'form.apps.FormConfig'
+    'form.apps.FormConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [

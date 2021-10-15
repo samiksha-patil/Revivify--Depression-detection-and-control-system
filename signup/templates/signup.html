@@ -1,0 +1,36 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'css/signup.css' %}" rel="stylesheet"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section" style="background-image: url({% static 'images/bg.png' %})">
+            <div class="row">
+                <div class="container">
+                    <form action="" method="POST" autocomplete="off">
+                        {% csrf_token %}
+                        {{form.uname|as_crispy_field}}
+                        {{form.lname|as_crispy_field}}
+                        {{form.fname|as_crispy_field}}
+                        {{form.age|as_crispy_field}}
+                        {{form.gender|as_crispy_field}}
+                        {{form.user}}
+                       
+                        <button type="submit" class="btn btn-success mb-4 mt-4">Sign up</button>
+                    </form>
+                    <p id="log">Already have an account? <a href="#">Login</a></p>
+                </div>
+            </div>
+    </div>  
+</body>
+</html>
+
+{% endblock %}
