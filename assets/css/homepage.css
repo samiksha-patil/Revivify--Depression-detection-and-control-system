@@ -168,3 +168,24 @@ input:focus{
 a{
     text-decoration:none!important ;
 }
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fc7169;
+    width: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    width: 10px;
+  }
