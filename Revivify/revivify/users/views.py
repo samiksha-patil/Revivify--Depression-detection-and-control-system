@@ -20,3 +20,6 @@ def register(request):
 def home(request):
      
      return render(request,'home.html')
+
+# def login(request):
+#     return render(request,'users/login.html')
