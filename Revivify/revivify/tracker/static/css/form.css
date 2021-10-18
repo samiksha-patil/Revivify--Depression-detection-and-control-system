@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+  
+}
+
+.herosection{
+    margin: 0;
+    justify-content: center;
+    background-color: #ffc7b6;
+    width: 1400px;
+    height: 656px;
+}
+
+.formsection{
+    margin-top: 90px;
+    margin-left: 70px;
+    width: 1250px;
+    height: 517px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: scroll;
+}
+
+#set{
+  background-color: #FFFCDE;
+  width: 500px;
+  height: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fc7169;
+    width: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    width: 10px;
+  }
