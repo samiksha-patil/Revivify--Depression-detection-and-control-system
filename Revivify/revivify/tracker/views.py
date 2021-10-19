@@ -80,4 +80,5 @@ def dass21_form(request):
         print("thdh")
         return render(request, 'tracker/dass21_form.html') 
         
-  
+def dass42(request):
+    return render(request, 'tracker/dass42.html')
