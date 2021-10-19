@@ -1,92 +1,124 @@
-body{
-    margin: 0;
- 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.herosection{
-    margin: 0;
-    justify-content: center;
-    background-color: #ffc7b6;
-    width: 1400px;
-    height: 656px;
-    
+.form-page {
+  background-color: #ffc7b6;
 }
 
-#quest{
-    margin-top: 50px;
+.form-row {
+  width: 70%;
+  background: white;
+  margin-top: 6rem;
+  height: 80vh;
+  overflow-y: auto;
 }
 
-.formsection{
-    margin-top: 90px;
-    margin-left: 130px;
-    width: 1150px;
-    height: 517px;
-    background-color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: scroll;
-}  
-
-.form-group{
-    background-color: #fffcde;
-    margin: 20px 0px 10px 20px;
-    width: 800px;
-    padding: 10px;
-    box-shadow: 0px 1px 8px rgba(65, 50, 67, 0.2);
+.form-group-dass {
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.4rem !important;
+  background-color: #fffcde;
+  box-shadow: 3px 3px 5px rgb(65 50 67 / 15%);
 }
 
-#question{
-    font-weight: bold;
+.question {
+  background-color: #fffcde;
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 0.7rem;
+  /* box-shadow: 3px 3px 5px rgb(65 50 67 / 15%); */
 }
 
-#option{
-    font-weight: bold;
-    margin-left: 15px;
-    margin-top: -10px;
+.option {
+  background-color: #fffcde;
+  display: inline-block;
+  padding: 0.3rem 2rem !important;
+  /* box-shadow: 3px 3px 5px rgb(65 50 67 / 10%); */
+}
+.formsection {
+  width: 100%;
 }
 
-#submit{
-    margin: 30px 0px 30px 500px;
+/* 
+
+#quest {
+  margin-top: 50px;
 }
 
-#submit button{
-    background-color: #fc7169;
-    border-radius: 15px;
-    padding: 7px 20px 7px 20px;
-    border: none;
-    color: white;
-    box-shadow: 5px 4px 15px rgba(110, 110, 110, 0.5);  
+.formsection {
+  margin-top: 90px;
+  margin-left: 130px;
+  width: 1150px;
+  height: 517px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: scroll;
 }
 
-#title{
-    width: 1150px;
-    background-color: #413243;
-    color: white;
-    position: fixed;
-    z-index: 1;
-    margin-bottom: 10px;
-    
+.form-group {
+  background-color: #fffcde;
+  margin: 20px 0px 10px 20px;
+  width: 800px;
+  padding: 10px;
+  box-shadow: 0px 1px 8px rgba(65, 50, 67, 0.2);
 }
 
-#title h4{
-    margin-left: 450px;
+#question {
+  font-weight: bold;
 }
+
+#option {
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: -10px;
+}
+
+#submit {
+  margin: 30px 0px 30px 500px;
+}
+
+#submit button {
+  background-color: #fc7169;
+  border-radius: 15px;
+  padding: 7px 20px 7px 20px;
+  border: none;
+  color: white;
+  box-shadow: 5px 4px 15px rgba(110, 110, 110, 0.5);
+}
+
+#title {
+  width: 1150px;
+  background-color: #413243;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+#title h4 {
+  margin-left: 450px;
+} */
 
 ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #fc7169;
-    width: 8px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    width: 10px;
-  }
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fc7169;
+  width: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+}
