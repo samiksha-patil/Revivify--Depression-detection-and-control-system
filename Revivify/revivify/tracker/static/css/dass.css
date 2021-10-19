@@ -43,6 +43,14 @@ body {
   width: 100%;
 }
 
+.submit-form,
+.submit-form:hover,
+.submit-form:active {
+  background: white;
+  color: rgb(65, 50, 67);
+  border: 1px solid rgb(65, 50, 67) !important;
+}
+
 /* 
 
 #quest {
