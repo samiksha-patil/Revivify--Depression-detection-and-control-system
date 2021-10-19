@@ -1,6 +1,6 @@
 {% extends "users/base.html" %} {% load crispy_forms_tags %} {% block content %}
-<div class="section">
-  <div class="row">
+<div id="login-section" class="section">
+  <div class="row row-login">
     <div class="container custom-padding">
       <form action="" method="POST" autocomplete="off">
         {% csrf_token %} {{form.uname|crispy}} {{form.lname|crispy}}
@@ -10,10 +10,10 @@
           {{ form|crispy }}
         </fieldset>
         <div class="form-group text-center">
-          <button class="btn login mt-4" type="submit">Login</button>
+          <button class="btn login mt-4 mb-3" type="submit">Login</button>
         </div>
       </form>
-      <p id="log">
+      <p id="log-login">
         Need an Account? <a href="{% url 'register' %}">Sign Up Now</a>
       </p>
     </div>
