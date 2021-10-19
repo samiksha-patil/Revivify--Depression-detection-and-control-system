@@ -1,0 +1,464 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Child</title>
+    <link rel="stylesheet" href="{% static 'css/phq9.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+		<div class="herosection">
+            <div class="row">
+			<div class="formsection">
+            <div id="title">
+                <h4>DASS21 Questionnaire</h4>
+            </div>
+            <div id="quest">
+			<form method="POST" class="my-login-validation" action="/phq">{% csrf_token %}
+                <div class="form-group">
+                    <label for="question1"><p id="question">1. I found it hard to wind down</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question2"><p id="question">2. I was aware of dryness of my mouth</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>               
+                </div>
+                <div class="form-group">
+                    <label for="question3"><p id="question">3. I couldn't seem to experience any positive feeling at all</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>              
+                </div>
+                <div class="form-group">
+                    <label for="question4"><p id="question">4. I experienced breathing difficulty (eg, excessively rapid breathing, breathlessness in the absence of physical exertion)</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>               
+                </div>
+                <div class="form-group">
+                    <label for="question5"><p id="question">5. I found it difficult to work up the initiative to do things</p></label>
+                        <div id="question1" class=" d-flex flex-row justify-content-start">
+                            <div class="form-check" id="option">
+                                <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                                <label class="form-check-label" for="question1">Never</label>
+                            </div>
+                            <div class="form-check" id="option">
+                                <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                                <label class="form-check-label" for="question1">sometimes</label>
+                            </div>
+                            <div class="form-check" id="option">
+                                <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                                <label class="form-check-label" for="question1">Often</label>
+                            </div>
+                            <div class="form-check" id="option">
+                                <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                                <label class="form-check-label" for="question1">Always</label>
+                            </div>
+                        </div>               
+                </div>
+                <div class="form-group">
+                    <label for="question6"><p id="question">6. I tended to over-react to situations</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>               
+                </div>
+                <div class="form-group">
+                    <label for="question7"><p id="question">7.  I experienced trembling (eg, in the hands)</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>              
+                </div>
+                <div class="form-group">
+                    <label for="question8"><p id="question">8.  I felt that I was using a lot of nervous energy</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>             
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">9. I was worried about situations in which I might panic and make a fool of myself</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">10. I felt that I had nothing to look forward to</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">11. I found myself getting agitated</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">12. I found it difficult to relax</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">13. I felt down-hearted and blue</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">14.  I was intolerant of anything that kept me from getting on with what I was doing</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">15. I felt I was close to panic</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">16. I felt I was close to panic</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">15. I felt I was close to panic</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">15. I felt I was close to panic</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">15. I felt I was close to panic</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <label for="question9"><p id="question">15. I felt I was close to panic</p></label>
+                    <div id="question1" class=" d-flex flex-row justify-content-start">
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="0" name="question1" id=" Not_at_all">
+                            <label class="form-check-label" for="question1">Never</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="1" name="question1" id="Several_days">
+                            <label class="form-check-label" for="question1">sometimes</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="2" name="question1" id="More_than_half_the_days">
+                            <label class="form-check-label" for="question1">Often</label>
+                        </div>
+                        <div class="form-check" id="option">
+                            <input class="form-check-input" type="radio" value="3" name="question1" id="Nearly_every_day">
+                            <label class="form-check-label" for="question1">Always</label>
+                        </div>
+                    </div>            
+                </div>
+                <div id="submit">
+                    <button type="submit">Submit</button>
+                </div>
+			</form>
+            </div>
+            </div>
+			</div>
+		</div>
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="..\..\static\js\add-child-form.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'bn,en,gu,hi,kn,ml,mr,ne,or,pa,sd,si,ta,te,ur',}, 'google_translate_element');
+        }
+    </script>
+</body>
+</html>
