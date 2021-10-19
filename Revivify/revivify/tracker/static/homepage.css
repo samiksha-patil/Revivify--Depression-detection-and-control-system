@@ -80,7 +80,13 @@
     text-decoration: none;
 }
 
-
+.box-section-score{
+    background: #ffffff;
+    box-shadow: 5px 4px 15px rgb(252 113 105 / 50%);
+    border-radius: 30px;
+    height: 55vh;
+    padding: 20px;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -189,3 +195,4 @@ a{
   ::-webkit-scrollbar-thumb:hover {
     width: 10px;
   }
+  

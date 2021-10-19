@@ -26,8 +26,9 @@ def phq_form(request):
         elif score <=27:
             level="Severe depression"
         print(level)
-        return render(request, 'tracker/phq9.html',{
-            'level':level,          
+        return render(request, 'tracker/phq9score.html',{
+            'level':level, 
+            'score':score         
         }) 
 
     else:

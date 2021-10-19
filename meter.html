@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>ZingSoft Demo</title>
+    <script src="dist/gauge.js"></script>
+		<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <style>
+            html, body {
+  height:100%;
+  width:100%;
+}
+
+#myChart {
+  height:100%;
+  width:100%;
+  min-height:150px;
+}
+.zc-ref {
+  display: none;
+}
+        </style>
+       
+</head>
+	<body>
+
+
+
+    <canvas id="demo"></canvas>
+
+
+
+
+
+		<div id='myChart'><a class="zc-ref" href="https://www.zingchart.com/"></a></div>
+        <script>window.feed = function(callback) {
+            var tick = {};
+            tick.plot0 = Math.ceil(20);
+            callback(JSON.stringify(tick));
+          };
+          
+          var myConfig = {
+               type: "gauge",
+               globals: {
+                 fontSize: 25
+               },
+               plotarea:{
+                 marginTop:80
+               },
+               plot:{
+                 size:'100%',
+                 valueBox: {
+                   placement: 'center',
+                   text:'%v', //default
+                   fontSize:35,
+                   rules:[
+                     {
+                       rule: '%v >= 4',
+                       text: '%v<br>Minimal depression '
+                     },
+                     {
+                       rule: '%v < 4 && %v > 9',
+                       text: '%v<br>Mild depression'
+                     },
+                     {
+                       rule: '%v < 10 && %v > 14',
+                       text: '%v<br>Moderate depression'
+                     },
+                     {
+                       rule:'%v < 14 && %v > 19',
+                       text: '%v<br>Moderately severe depression'
+                     }, 
+                   {
+                       rule:'%v < 19 && %v > 27',
+                       text: '%v<br>Severe depression'
+                     }   
+                   ]
+                 }
+               },
+            tooltip:{
+              borderRadius:5
+            },
+               scaleR:{
+                aperture:180,
+                minValue:1,
+                maxValue:27,
+               
+                center:{
+                  visible:false
+                },
+                tick:{
+                  visible:false
+                },
+                item:{
+                  offsetR:0,
+                  rules:[
+                    {
+                      rule:'%i == 9',
+                      offsetX:15
+                    }
+                  ]
+                },
+                labels:['0','10','20','27'],
+                ring:{
+                  size:50,
+                  rules:[
+                    {
+                      rule:'%v <= 4',
+                      backgroundColor:'#FFFCDE'
+                    },
+                    {
+                      rule:'%v > 4 && %v <9',
+                      backgroundColor:'#FFECDE'
+                    },
+                    {
+                      rule:'%v >= 10 && %v < 14',
+                      backgroundColor:'#FFC7B6'
+                    },{
+                       rule:'%v < 14 && %v > 19',
+                       backgroundColor:'#FC7169'
+                     },
+                    {
+                      rule:'%v >=27',
+                      backgroundColor:'#413243'
+                    }      
+                  ]
+                }
+               },
+            refresh:{  
+                type:"feed",
+                transport:"js",
+                url:"feed()",
+                interval:1500,
+                resetTimeout:1000
+            },
+              series : [
+                  {
+                      values : [755], // starting value
+                      backgroundColor:'black',
+                  indicator:[10,10,10,10,0.75],
+                  animation:{  
+                  effect:2,
+                  method:1,
+                  sequence:4,
+                  speed: 900
+               },
+                  }
+              ]
+          };
+          
+          zingchart.render({ 
+              id : 'myChart', 
+              data : myConfig, 
+              height: 500, 
+              width: '100%'
+          });
+          
+          </script>
+	</body>
+</html>
