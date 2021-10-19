@@ -22,14 +22,17 @@
   <div class="row" style="background-color: #fffcde; padding: 50px;">
     <div class="col-md-4 " style="place-items: center; display: grid;">
         <div id="chart-depression">FusionCharts XT will load here!</div>
+        {{depressionlevel}}
       </div>
      
       <div class="col-md-4 " style="place-items: center; display: grid;">
         <div id="chart-anxiety">FusionCharts XT will load here!</div>
+        {{anxietylevel}}
       </div>
    
       <div class="col-md-4 " style="place-items: center; display: grid;">
         <div id="chart-stress">FusionCharts XT will load here!</div>
+        {{stresslevel}}
       </div>
     
 </div>
@@ -51,30 +54,30 @@
             "caption": "Depression",
             "showValue": "0",
             "lowerLimit": "1",
-            "upperLimit": "27",
+            "upperLimit": "42",
             "theme": "fusion"
         },
         "colorRange": {
             "color": [{
-                "minValue": "1",
-                "maxValue": "4",
+                "minValue": "0",
+                "maxValue": "9",
                 "code": "#FFFCDE"
             }, {
-                "minValue": "4",
-                "maxValue": "9",
+                "minValue": "9",
+                "maxValue": "13",
                 "code": "#FFECDE"
             },
             {
-                "minValue": "9",
-                "maxValue": "14",
-                "code": "#FFC7B6"
-            },{
-                "minValue": "14",
+                "minValue": "13",
                 "maxValue": "20",
-                "code": "#FC7169"
+                "code": "#FFC7B6"
             },{
                 "minValue": "20",
                 "maxValue": "27",
+                "code": "#FC7169"
+            },{
+                "minValue": "28",
+                "maxValue": "42",
                 "code": "#413243"
             }
             ]
@@ -106,19 +109,19 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "PHQ 9 Score",
-            "showValue": "1",
-            "lowerLimit": "1",
-            "upperLimit": "27",
+            "caption": "Anxiety",
+            "showValue": "0",
+            "lowerLimit": "0",
+            "upperLimit": "42",
             "theme": "fusion"
         },
         "colorRange": {
             "color": [{
-                "minValue": "1",
-                "maxValue": "4",
+                "minValue": "0",
+                "maxValue": "7",
                 "code": "#FFFCDE"
             }, {
-                "minValue": "4",
+                "minValue": "7",
                 "maxValue": "9",
                 "code": "#FFECDE"
             },
@@ -128,11 +131,11 @@
                 "code": "#FFC7B6"
             },{
                 "minValue": "14",
-                "maxValue": "20",
+                "maxValue": "19",
                 "code": "#FC7169"
             },{
-                "minValue": "20",
-                "maxValue": "27",
+                "minValue": "19",
+                "maxValue": "42",
                 "code": "#413243"
             }
             ]
@@ -165,32 +168,32 @@
     dataSource: {
         "chart": {
             "caption": "PHQ 9 Score",
-            "showValue": "1",
-            "lowerLimit": "1",
-            "upperLimit": "27",
+            "showValue": "0",
+            "lowerLimit": "0",
+            "upperLimit": "42",
             "theme": "fusion"
         },
         "colorRange": {
             "color": [{
-                "minValue": "1",
-                "maxValue": "4",
+                "minValue": "0",
+                "maxValue": "14",
                 "code": "#FFFCDE"
             }, {
-                "minValue": "4",
-                "maxValue": "9",
+                "minValue": "14",
+                "maxValue": "18",
                 "code": "#FFECDE"
             },
             {
-                "minValue": "9",
-                "maxValue": "14",
+                "minValue": "18",
+                "maxValue": "25",
                 "code": "#FFC7B6"
             },{
-                "minValue": "14",
-                "maxValue": "20",
+                "minValue": "25",
+                "maxValue": "33",
                 "code": "#FC7169"
             },{
-                "minValue": "20",
-                "maxValue": "27",
+                "minValue": "33",
+                "maxValue": "42",
                 "code": "#413243"
             }
             ]
