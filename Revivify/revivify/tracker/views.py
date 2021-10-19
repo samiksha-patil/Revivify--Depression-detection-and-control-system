@@ -34,4 +34,5 @@ def phq_form(request):
         print("thdh")
         return render(request, 'tracker/phq9.html') 
         
-  
+def dass42(request):
+    return render(request, 'tracker/dass42.html')
