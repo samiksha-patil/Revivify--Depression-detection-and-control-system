@@ -16,7 +16,7 @@ def phq_form(request):
         score=int(ans1)+int(ans2)+int(ans3)+int(ans4)+int(ans5)+int(ans6)+int(ans7)+int(ans8)+int(ans9)
         print(score)
         if score<=4:
-            level="mild depression"
+            level="None-minimal depression"
         elif score <=9:
             level="mild depression"
         elif score <=14:
@@ -60,7 +60,9 @@ def dass21_form(request):
         ans20= request.POST['question20']
         ans21= request.POST['question21']
 
-        score=int(ans1)+int(ans2)+int(ans3)+int(ans4)+int(ans5)+int(ans6)+int(ans7)+int(ans8)+int(ans9)
+        score_depression=int(ans3)+int(ans5)+int(ans10)+int(ans13)+int(ans16)+int(ans17)+int(ans21)
+        score_anxiety=int(ans2)+int(ans4)+int(ans4)+int(ans9)+int(ans15)+int(ans19)+int(ans20)
+        score_stress=int(ans1)+int(ans6)+int(ans8)+int(ans11)+int(ans14)+int(ans18)+int(ans12)
         print(score)
         if score<=4:
             level="mild depression"
@@ -73,8 +75,9 @@ def dass21_form(request):
         elif score <=27:
             level="Severe depression"
         print(level)
-        return render(request, 'tracker/dass21_form.html',{
-            'level':level,          
+        return render(request, 'tracker/dass21_score.html',{
+            'level':level, 
+            'score':score         
         }) 
 
     else:
