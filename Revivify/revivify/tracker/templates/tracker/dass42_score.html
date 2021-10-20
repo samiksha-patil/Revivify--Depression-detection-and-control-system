@@ -15,10 +15,7 @@
      </div>       
   </div>
   <div>
-    {{score}}
-    {{depressionlevel}}
-    {{anxietylevel}}
-    {{stresslevel}}
+   
   <div class="row" style="background-color: #fffcde; padding: 50px;">
     <div class="col-md-4 " style="place-items: center; display: grid;">
         <div id="chart-depression">FusionCharts XT will load here!</div>
@@ -28,6 +25,7 @@
       <div class="col-md-4 " style="place-items: center; display: grid;">
         <div id="chart-anxiety">FusionCharts XT will load here!</div>
         {{anxietylevel}}
+       
       </div>
    
       <div class="col-md-4 " style="place-items: center; display: grid;">
@@ -36,8 +34,12 @@
       </div>
     
 </div>
+<div style="place-items: center; display: grid;">
+<button class="btn start mt-3 my-md-5  ">
+    Home
+   </button>
 </div>
-
+</div>
 
 <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
 	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
@@ -52,8 +54,8 @@
     dataSource: {
         "chart": {
             "caption": "Depression",
-            "showValue": "0",
-            "lowerLimit": "1",
+            "showValue": "1",
+            "lowerLimit": "0",
             "upperLimit": "42",
             "theme": "fusion"
         },
@@ -84,7 +86,7 @@
         },
         "dials": {
             "dial": [{
-                "value": {{score}}
+                "value": {{depressionscore}}
             }]
         }
     }
@@ -110,7 +112,7 @@
     dataSource: {
         "chart": {
             "caption": "Anxiety",
-            "showValue": "0",
+            "showValue": "1",
             "lowerLimit": "0",
             "upperLimit": "42",
             "theme": "fusion"
@@ -142,7 +144,7 @@
         },
         "dials": {
             "dial": [{
-                "value": {{score}}
+                "value": {{anxietyscore}}
             }]
         }
     }
@@ -168,7 +170,7 @@
     dataSource: {
         "chart": {
             "caption": "PHQ 9 Score",
-            "showValue": "0",
+            "showValue": "1",
             "lowerLimit": "0",
             "upperLimit": "42",
             "theme": "fusion"
@@ -200,7 +202,7 @@
         },
         "dials": {
             "dial": [{
-                "value": {{score}}
+                "value": {{stressscore}}
             }]
         }
     }
