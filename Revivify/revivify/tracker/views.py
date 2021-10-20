@@ -60,24 +60,48 @@ def dass21_form(request):
         ans20= request.POST['question20']
         ans21= request.POST['question21']
 
-        score_depression=int(ans3)+int(ans5)+int(ans10)+int(ans13)+int(ans16)+int(ans17)+int(ans21)
+        score_depression=2*(int(ans3)+int(ans5)+int(ans10)+int(ans13)+int(ans16)+int(ans17)+int(ans21))
         score_anxiety=int(ans2)+int(ans4)+int(ans4)+int(ans9)+int(ans15)+int(ans19)+int(ans20)
         score_stress=int(ans1)+int(ans6)+int(ans8)+int(ans11)+int(ans14)+int(ans18)+int(ans12)
-        print(score)
-        if score<=4:
-            level="mild depression"
-        elif score <=9:
-            level="mild depression"
-        elif score <=14:
-            level="Moderate depression"
-        elif score <=19:
-            level="Moderately severe depression "
-        elif score <=27:
-            level="Severe depression"
-        print(level)
+        if score_depression<=9:
+            depressionlevel="normal"
+        elif score_depression <=13:
+            depressionlevel="mild "
+        elif score_depression <=20:
+            depressionlevel="Moderate "
+        elif score_depression <=27:
+            depressionlevel="Severe  "
+        else:
+            depressionlevel="Extremely Severe"
+
+        #anxiety
+        if score_anxiety<=7:
+            anxietylevel="normal"
+        elif score_anxiety <=9:
+            anxietylevel="mild "
+        elif score_anxiety <=14:
+            anxietylevel="Moderate "
+        elif score_anxiety <=19:
+            anxietylevel="Severe  "
+        else:
+            anxietylevel="Extremely Severe"
+
+        #stress
+        if score_stress<=14:
+            stresslevel="normal"
+        elif score_stress <=18:
+            stresslevel="mild "
+        elif score_stress <=25:
+            stresslevel="Moderate "
+        elif score_stress <=33:
+            stresslevel="Severe  "
+        else:
+            stresslevel="Very Severe"
         return render(request, 'tracker/dass21_score.html',{
-            'level':level, 
-            'score':score         
+            'scoredepression':score_depression,
+               'stresslevel':stresslevel,
+               'anxietylevel':anxietylevel,
+                'depressionlevel': depressionlevel       
         }) 
 
     else:
