@@ -130,51 +130,57 @@ def dass42(request):
        
 
         score=int(ans1)+int(ans2)+int(ans3)+int(ans4)+int(ans5)+int(ans6)+int(ans7)+int(ans8)+int(ans9)+int(ans10)+int(ans11)+int(ans12)+int(ans13)+int(ans14)+int(ans15)+int(ans16)+int(ans17)+int(ans18)+int(ans19)+int(ans20)+int(ans21)+int(ans22)+int(ans23)+int(ans24)+int(ans25)+int(ans26)+int(ans27)+int(ans28)+int(ans29)+int(ans30)+int(ans31)+int(ans32)+int(ans33)+int(ans34)+int(ans35)+int(ans36)+int(ans37)+int(ans38)+int(ans39)+int(ans40)+int(ans41)+int(ans42)        
-        
+        depressionscore=int(ans3)+int(ans5)+int(ans10)+int(ans13)+int(ans16)+int(ans17)+int(ans21)+int(ans24)+int(ans26)+int(ans31)+int(ans37)+int(ans38)+int(ans42)
+        anxietyscore=int(ans2)+int(ans7)+int(ans9)+int(ans15)+int(ans19)+int(ans20)+int(ans23)+int(ans25)+int(ans28)+int(ans30)+int(ans36)+int(ans40)+int(ans41)
+        stressscore=int(ans1)+int(ans6)+int(ans8)+int(ans11)+int(ans12)+int(ans14)+int(ans18)+int(ans22)+int(ans27)+int(ans29)+int(ans32)+int(ans33)+int(ans35)+int(ans39)
         
         print(score)
         #depression
-        if score<=9:
+        if depressionscore<=9:
             depressionlevel="normal"
-        elif score <=13:
+        elif depressionscore <=13:
             depressionlevel="mild "
-        elif score <=20:
+        elif depressionscore <=20:
             depressionlevel="Moderate "
-        elif score <=27:
+        elif depressionscore <=27:
             depressionlevel="Severe  "
         else:
             depressionlevel="Very Severe"
 
         #anxiety
-        if score<=7:
+        if anxietyscore<=7:
             anxietylevel="normal"
-        elif score <=9:
+        elif anxietyscore <=9:
             anxietylevel="mild "
-        elif score <=14:
+        elif anxietyscore <=14:
             anxietylevel="Moderate "
-        elif score <=19:
+        elif anxietyscore <=19:
             anxietylevel="Severe  "
         else:
             anxietylevel="Very Severe"
 
         #stress
-        if score<=14:
+        if stressscore<=14:
             stresslevel="normal"
-        elif score <=18:
+        elif stressscore <=18:
             stresslevel="mild "
-        elif score <=25:
+        elif stressscore <=25:
             stresslevel="Moderate "
-        elif score <=33:
+        elif stressscore <=33:
             stresslevel="Severe  "
         else:
             stresslevel="Very Severe"
         
 
-
-
+        print(stresslevel)
+        print(anxietylevel)
+        print( depressionlevel)
 
         return render(request, 'tracker/dass42_score.html',{
             'score':score,
+            'depressionscore':depressionscore,
+            'anxietyscore':anxietyscore,
+            'stressscore':stressscore,
                'stresslevel':stresslevel,
                'anxietylevel':anxietylevel,
                 'depressionlevel': depressionlevel
