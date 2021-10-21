@@ -64,9 +64,9 @@ def dass21_form(request):
         score_anxiety=int(ans2)+int(ans4)+int(ans4)+int(ans9)+int(ans15)+int(ans19)+int(ans20)
         score_stress=int(ans1)+int(ans6)+int(ans8)+int(ans11)+int(ans14)+int(ans18)+int(ans12)
         if score_depression<=9:
-            depressionlevel="normal"
+            depressionlevel="Normal"
         elif score_depression <=13:
-            depressionlevel="mild "
+            depressionlevel="Mild "
         elif score_depression <=20:
             depressionlevel="Moderate "
         elif score_depression <=27:
@@ -76,9 +76,9 @@ def dass21_form(request):
 
         #anxiety
         if score_anxiety<=7:
-            anxietylevel="normal"
+            anxietylevel="Normal"
         elif score_anxiety <=9:
-            anxietylevel="mild "
+            anxietylevel="Mild "
         elif score_anxiety <=14:
             anxietylevel="Moderate "
         elif score_anxiety <=19:
@@ -88,9 +88,9 @@ def dass21_form(request):
 
         #stress
         if score_stress<=14:
-            stresslevel="normal"
+            stresslevel="Normal"
         elif score_stress <=18:
-            stresslevel="mild "
+            stresslevel="Mild "
         elif score_stress <=25:
             stresslevel="Moderate "
         elif score_stress <=33:
@@ -98,10 +98,12 @@ def dass21_form(request):
         else:
             stresslevel="Very Severe"
         return render(request, 'tracker/dass21_score.html',{
-            'scoredepression':score_depression,
+            'depressionscore':score_depression,
+            'anxietyscore':score_anxiety,
+            'stressscore':score_stress,
                'stresslevel':stresslevel,
                'anxietylevel':anxietylevel,
-                'depressionlevel': depressionlevel       
+                'depressionlevel': depressionlevel  
         }) 
 
     else:
@@ -164,9 +166,9 @@ def dass42(request):
         print(score)
         #depression
         if depressionscore<=9:
-            depressionlevel="normal"
+            depressionlevel="Normal"
         elif depressionscore <=13:
-            depressionlevel="mild "
+            depressionlevel="Mild "
         elif depressionscore <=20:
             depressionlevel="Moderate "
         elif depressionscore <=27:
@@ -176,9 +178,9 @@ def dass42(request):
 
         #anxiety
         if anxietyscore<=7:
-            anxietylevel="normal"
+            anxietylevel="Normal"
         elif anxietyscore <=9:
-            anxietylevel="mild "
+            anxietylevel="Mild "
         elif anxietyscore <=14:
             anxietylevel="Moderate "
         elif anxietyscore <=19:
@@ -188,9 +190,9 @@ def dass42(request):
 
         #stress
         if stressscore<=14:
-            stresslevel="normal"
+            stresslevel="Normal"
         elif stressscore <=18:
-            stresslevel="mild "
+            stresslevel="Mild "
         elif stressscore <=25:
             stresslevel="Moderate "
         elif stressscore <=33:
