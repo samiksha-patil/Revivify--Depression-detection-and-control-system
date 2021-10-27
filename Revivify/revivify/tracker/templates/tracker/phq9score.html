@@ -33,24 +33,17 @@
     <p> okay</p>
     {% elif  score > 9 and score < 15 %}
     <p>It is recommended to take dass21 </p>
-    <button class="btn start mt-3 my-md-5">
-        Take DASS21 Test
-      </button>
+    <a class="btn start mt-3 my-md-5" href="{% url 'dass21_form' %}">Take DASS21 Test</a>
+
     
     {% elif  score > 14 and score < 19 %}
     <p>It is recommended to take dass21 </p>
-    <button class="btn start mt-3 my-md-5">
-        Take DASS21 Test
-      </button>
+    <a class="btn start mt-3 my-md-5" href="{% url 'dass21_form' %}">Take DASS21 Test</a>
     
     {% elif  score > 20 and score < 27 %}
     <p>It is recommended to take dass21 and  dass42 test </p>
-    <button class="btn start mt-3 my-md-5">
-        Take DASS21 Test
-      </button>
-      <button class="btn start mt-3 my-md-5">
-        Take DASS42 Test
-      </button>
+    <a class="btn start mt-3 my-md-5" href="{% url 'dass21_form' %}">Take DASS21 Test</a>
+    <a class="btn start mt-3 my-md-5" href="{% url 'dass42' %}"> Take DASS42 Test</a>
       <button class="btn start mt-3 my-md-5">
        Read Blog
       </button>
