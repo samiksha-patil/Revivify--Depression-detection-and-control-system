@@ -29,9 +29,10 @@
    
     
     {% if score < 5 %}
-    <p>good </p>
+    <p> Looks Good!</p>
+    <p> Please take this if you feel low anytime</p>
     {% elif  score > 4 and score < 10 %}
-    <p> okay</p>
+    <p> We suggest to keep on analyzing the mental health from time to time and reach out to revivfy any time required</p>
     {% elif  score > 9 and score < 15 %}
     <p>It is recommended to take dass21 </p>
     <a class="btn start mt-3 my-md-5" href="{% url 'dass21_form' %}">Take DASS21 Test</a>
