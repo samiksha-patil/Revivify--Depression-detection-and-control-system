@@ -19,26 +19,27 @@
   <div class="row" style="background-color: #fffcde; padding: 50px;">
   <div class="col-md-6 " style="place-items: center; display: grid;">
     <div id="chart-container">FusionCharts XT will load here!</div>
+ <h5 class="my-2">   {{level}}</h5>
   </div>
   <div class="col-md-6 ">
       <div class="box-section-score">
           <h2 class="heading mt-3 mb-5">Whats Next?</h2>
       </div>
-    {{score}}
-    {{level}}
+    
+   
     
     {% if score < 5 %}
     <p>good </p>
     {% elif  score > 4 and score < 10 %}
     <p> okay</p>
     {% elif  score > 9 and score < 15 %}
-    <p>It is recommended to take dass21 </p>
+    <h2>It is recommended to take dass21 </h2>
     <button class="btn start mt-3 my-md-5">
         Take DASS21 Test
       </button>
     
-    {% elif  score > 14 and score < 19 %}
-    <p>It is recommended to take dass21 </p>
+    {% elif  score > 14 and score < 20 %}
+    <h2>It is recommended to take dass21 </h2>
     <button class="btn start mt-3 my-md-5">
         Take DASS21 Test
       </button>
