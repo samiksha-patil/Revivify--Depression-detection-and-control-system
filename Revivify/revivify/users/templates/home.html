@@ -74,10 +74,14 @@ However, only half of those affected receive treatment, often because of the sti
                 alt="Avatar"
                
               />
+              <h5>Analyzing Tweets</h5>
+              <p>We analyze the hidden emotions in your tweets to predict the underlying emotions.</p>
+
             </div>
-            <div class="flip-card-back feature-box">
-              <!-- BACK -->
-            </div>
+            <div class="flip-card-back feature-box" id="cardback">
+              <p>People often express views on twitter and this data can be efficiently used to detect their emotions.</p>
+              <p>Do not worry, your data is secure with us!</p>
+              </div>
           </div>
         </div>
       </div>
@@ -90,9 +94,12 @@ However, only half of those affected receive treatment, often because of the sti
                 alt="Avatar"
                 
               />
+              <h5>Automated Chatbot</h5>
+              <p>Our AI inspired chatbot will talk you through the problem.</p>
             </div>
-            <div class="flip-card-back feature-box">
-              <!-- BACK -->
+            <div class="flip-card-back feature-box" id="cardback">
+              <p>This AI inspired chatbot chats with you and helps you to figure out the cause of your condition.</p>
+              <p>Based on your answers, it will run an algorithm and indicate your level of depression.</p>
             </div>
           </div>
         </div>
@@ -108,27 +115,31 @@ However, only half of those affected receive treatment, often because of the sti
               
                 
               />
+              <h5>Anonymous Chatrooms</h5>
+              <p>You can chat with other people without revealing your identity.</p>
             </div>
-            <div class="flip-card-back feature-box">
-              <!-- BACK -->
+            <div class="flip-card-back feature-box" id="cardback">
+              <p>You can now chat with other people having the same problems and form support groups to share what you feel.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row justify-content-around my-5 py-5">
+    <div class="row justify-content-around my-1 py-5">
       <div class="col-10 col-md-3">
         <div class="flip-card my-4">
           <div class="flip-card-inner">
             <div class="flip-card-front feature-box">
               <img
-                src="img_avatar.png"
+                src="{% static 'image/F6.svg' %}"
                 alt="Avatar"
             
               />
+              <h5>Track Progress</h5>
+              <p>You can track your progress using our instant scoring system and know your improvement areas.</p>
             </div>
-            <div class="flip-card-back feature-box">
-              <!-- BACK -->
+            <div class="flip-card-back feature-box" id="cardback">
+              <p>There is no limit on the number of tests you can take on Revivify. Additionally, you get to track your previous records and find out key areas for improvement.</p>
             </div>
           </div>
         </div>
@@ -136,15 +147,17 @@ However, only half of those affected receive treatment, often because of the sti
       <div class="col-10 col-md-3">
         <div class="flip-card my-4">
           <div class="flip-card-inner">
-            <div class="flip-card-front feature-box">
+            <div class="flip-card-front feature-box" >
               <img
-                src="img_avatar.png"
+                src="{% static 'image/F4.svg' %}"
                 alt="Avatar"
                 
               />
+              <h5>24x7 Availibility</h5>
+              <p>Revivify is here for you whenever you need. You don't have to worry about timezones.</p>
             </div>
-            <div class="flip-card-back feature-box">
-              <!-- BACK -->
+            <div class="flip-card-back feature-box" id="cardback">
+              <p>You can access any of our services at all times. Our AI agents are here to help you whenever required.You can rely on us.</p>
             </div>
           </div>
         </div>
@@ -154,13 +167,16 @@ However, only half of those affected receive treatment, often because of the sti
           <div class="flip-card-inner">
             <div class="flip-card-front feature-box">
               <img
-                src="img_avatar.png"
+                src="{% static 'image/F5.svg' %}"
                 alt="Avatar"
               
               />
+              <h5>Safe and Secure</h5>
+              <p>We, at Revivify, believe in honest policies and secure your data with the highest efficiency.</p>
             </div>
-            <div class="flip-card-back feature-box">
-              <!-- BACK -->
+            <div class="flip-card-back feature-box" id="cardback">
+              <p>We understand that health related data is very personal and we respect its confidentiality.</p>
+              <p>Any information you share with us is highly secured.</p>
             </div>
           </div>
         </div>
@@ -199,7 +215,7 @@ However, only half of those affected receive treatment, often because of the sti
                       <h1 class="blog-head mb-4">Quick ways to handle anxiety</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis tellus nisi, sed hendrerit mauris aliquet eget. Vestibulum ultrices semper accumsan. Proin viverra ultricies lacus sit amet vestibulum.Suspendisse aliquet eget nulla nec ornare. Aliquam erat volutpat. Phasellus suscipit, augue sit amet finibus faucibus, nisi dolor feugiat tortor, at condimentum lectus mauris tincidunt magna. Nunc et metus eu nisl vulputate porta. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis tellus nisi, sed hendrerit mauris aliquet eget. Vestibulum ultrices semper accumsan. Proin viverra ultricies lacus sit amet vestibulum.Suspendisse aliquet eget nulla nec ornare. Aliquam erat volutpat. Phasellus suscipit, augue sit amet finibus faucibus, nisi dolor feugiat tortor, at condimentum lectus mauris tincidunt magna. Nunc et metus eu nisl vulputate porta.....</p>
-                      <a class="float-end" href="#">Read more</a>
+                      <a class="float-end" style="color: #FC7169; text-transform:uppercase ; font-weight: 600;" href="#">Read more</a>
                   </div>
                   
                   <div class="col-md-6 mx-auto  my-4" style="place-items: center; display: grid;">
@@ -216,7 +232,7 @@ However, only half of those affected receive treatment, often because of the sti
                       <h1 class="blog-head mb-4">Quick ways to handle anxiety</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis tellus nisi, sed hendrerit mauris aliquet eget. Vestibulum ultrices semper accumsan. Proin viverra ultricies lacus sit amet vestibulum.Suspendisse aliquet eget nulla nec ornare. Aliquam erat volutpat. Phasellus suscipit, augue sit amet finibus faucibus, nisi dolor feugiat tortor, at condimentum lectus mauris tincidunt magna. Nunc et metus eu nisl vulputate porta. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis tellus nisi, sed hendrerit mauris aliquet eget. Vestibulum ultrices semper accumsan. Proin viverra ultricies lacus sit amet vestibulum.Suspendisse aliquet eget nulla nec ornare. Aliquam erat volutpat. Phasellus suscipit, augue sit amet finibus faucibus, nisi dolor feugiat tortor, at condimentum lectus mauris tincidunt magna. Nunc et metus eu nisl vulputate porta.....</p>
-                     <a class="float-end footbutton" href="#">Read more</a>
+                     <a class="float-end" style="color: #FC7169; text-transform:uppercase ; font-weight: 600;" href="#">Read more</a>
                   </div>
                   
                   <div class="col-md-6 mx-auto  my-4" style="place-items: center; display: grid;">
