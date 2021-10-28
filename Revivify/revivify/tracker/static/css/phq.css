@@ -93,3 +93,17 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     width: 10px;
   }
+
+  .btn-test-info{
+    color: #ffffff;
+      background: #413243;
+      border-radius: 28px 0px 0px 29px;
+      border: 0;
+      outline: none;
+      transition: 0.5s all;
+      font-weight: 600;
+      text-transform: capitalize;
+      font-size: 100%;
+      padding: 0.9rem 2.4rem;
+  }
+  
