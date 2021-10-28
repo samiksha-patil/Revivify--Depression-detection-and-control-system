@@ -141,7 +141,6 @@
 }
 
 .hero-pic {
-  
   background-image: url(image/hero.png);
   background-repeat: no-repeat;
   background-size: 60%;
@@ -182,15 +181,33 @@
   margin-bottom: 2.5rem;
 }
 
+.padding {
+  padding-left: 3rem !important;
+  padding-right: 0;
+}
+
+.why {
+  max-height: 330px;
+}
 .black-text,
 .text {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 30px;
   text-align: justify;
   color: #000000;
+}
+
+.flip-card-front {
+  padding: 20px;
+}
+
+.flip-card-front img {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box-section {
