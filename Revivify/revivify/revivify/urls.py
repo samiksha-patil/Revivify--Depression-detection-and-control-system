@@ -31,6 +31,7 @@ urlpatterns = [
     path('phq',tracker_view.phq_form, name='phq_form'),
     path('dass21/',tracker_view.dass21_form, name='dass21_form'),
     path('dass42/',tracker_view.dass42, name='dass42'),
+    path('twitter/', user_views.twitter, name='twitter'),
 ]
 
 

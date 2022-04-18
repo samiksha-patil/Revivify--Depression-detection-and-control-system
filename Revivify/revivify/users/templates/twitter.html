@@ -1,0 +1,55 @@
+{% extends "users/base.html" %}
+{% load static %}
+{% block content %}
+<div id="login-section" class="section">
+  <div class="row row-login">
+    <div class="container custom-padding">
+      
+      
+        <fieldset class="form-group">
+          <legend class="pb-3 pt-5 text-center">Twitter Depression Analysis</legend>
+        </fieldset>
+        <label for="exampleInputEmail1">Enter Username</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="form-group text-center">
+
+          <!-- Button trigger modal -->
+<button type="button" class="btn login mt-4 mb-3" data-toggle="modal" data-target="#exampleModal">
+  Analyse
+</button>
+        </div>
+     
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Analysis of Depressive Symptoms</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid mx-auto d-block" src="{% static 'image/twitter.png' %}" alt="about us" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% load static %}

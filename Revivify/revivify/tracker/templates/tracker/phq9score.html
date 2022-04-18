@@ -38,11 +38,11 @@
     <a class="btn start mt-3 my-md-5" href="{% url 'dass21_form' %}">Take DASS21 Test</a>
 
     
-    {% elif  score > 14 and score < 19 %}
+    {% elif  score > 14 and score < 20 %}
     <p>It is recommended to take dass21 </p>
     <a class="btn start mt-3 my-md-5" href="{% url 'dass21_form' %}">Take DASS21 Test</a>
     
-    {% elif  score > 20 and score < 27 %}
+    {% elif  score > 19 and score < 27 %}
     <p>It is recommended to take dass21 and  dass42 test </p>
     <a class="btn start mt-3 my-md-5" href="{% url 'dass21_form' %}">Take DASS21 Test</a>
     <a class="btn start mt-3 my-md-5" href="{% url 'dass42' %}"> Take DASS42 Test</a>
